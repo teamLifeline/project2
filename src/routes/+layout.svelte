@@ -6,7 +6,9 @@
 	import Footer from '$lib/component/Footer.svelte';
 </script>
 
-
 <Header />
+<main>
+	<slot />
+</main>
 <Hero />
 <Footer />

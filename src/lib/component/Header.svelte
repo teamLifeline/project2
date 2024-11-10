@@ -53,8 +53,8 @@
 <header>
 	<div class="logo">LifelineWeb</div>
 	<nav>
-		<a href="/" class:active={activeLink === 'home'} on:click={() => activeLink = 'home'}>Home</a>
-		<a href="/request" class:active={activeLink === 'request'} on:click={() => activeLink = 'request'}>Request</a>
-		<a href="/contact" class:active={activeLink === 'contact'} on:click={() => activeLink = 'contact'}>Contact us</a>
+		<a href="/project2" class:active={activeLink === 'home'} on:click={() => activeLink = 'home'}>Home</a>
+		<a href="/project2/request" class:active={activeLink === 'request'} on:click={() => activeLink = 'request'}>Request</a>
+		<a href="/project2/contact" class:active={activeLink === 'contact'} on:click={() => activeLink = 'contact'}>Contact us</a>
 	</nav>
 </header>
