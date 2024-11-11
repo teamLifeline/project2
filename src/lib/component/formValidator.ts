@@ -2,6 +2,7 @@ export interface ValidationErrors {
   name?: string;
   email?: string;
   phoneNumber?: string;
+  address?: string;
   reason?: string;
 }
 
@@ -9,6 +10,7 @@ export function validateForm(
   name: string,
   email: string,
   phoneNumber: string,
+  address: string,
   reason: string
 ): ValidationErrors {
   const errors: ValidationErrors = {};
@@ -28,6 +30,12 @@ export function validateForm(
   } else if (!/^\d{10}$/.test(phoneNumber.replace(/\D/g, ""))) {
       errors.phoneNumber = "Phone number must be exactly 10 digits long.";
   }
+
+  if (!address.trim()) {
+    errors.phoneNumber = "address is required.";
+} else if (!/^\d{10}$/.test(phoneNumber.replace(/\D/g, ""))) {
+    errors.phoneNumber = "Address is required.";
+}
 
   if (!reason.trim()) {
       errors.reason = "Reason for contact is required.";

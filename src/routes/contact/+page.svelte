@@ -1,6 +1,6 @@
 <script lang="ts">
     import emailjs from 'emailjs-com';
-    import { validateForm } from "$lib/component/formValidator.js";
+    import { validateForm } from "$lib/component/formValidator";
     let name = '';
     let email = '';
     let phoneNumber = '';

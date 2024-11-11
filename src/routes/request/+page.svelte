@@ -42,7 +42,7 @@
     }
     input, select, textarea {
       padding: 0.5rem;
-      border: 1px solid #ccc;
+      border: 1px solid #8B0000;
       border-radius: 5px;
       width: 100%;
     }
@@ -58,6 +58,15 @@
       background-color: #218838;
     }
 
+    .name {
+      display: grid;
+      padding: 1rem;
+      grid-gap: 1rem; 
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
     .Request-title {
       font-family: poppins;
       font-weight: bolder;
@@ -68,18 +77,18 @@
   </style>
   
   <h1 class="Request-title">Request Aid</h1>
-  <form on:submit|preventDefault={sendRequest} class="font-poppins">
+  <form on:submit|preventDefault={sendRequest} class="Submit">
     <label for="name">Name</label>
-    <input id="name" type="text" bind:value={name} required />
+    <input id="name" class="name" type="text" bind:value={name} required />
   
-    <label for="contact">Contact Number</label>
-    <input id="contact" type="tel" bind:value={contactNumber} required />
+    <label for="contact" class="contact">Contact Number</label>
+    <input id="contact" class="contact" type="tel" bind:value={contactNumber} required />
   
-    <label for="address">Address</label>
-    <input id="address" type="text" bind:value={address} required />
+    <label for="address" class="address">Address</label>
+    <input id="address" class="address" type="text" bind:value={address} required />
   
-    <label for="assistance">Type of Assistance Needed</label>
-    <select id="assistance" bind:value={assistanceType} required>
+    <label for="assistance" class="assistance">Type of Assistance Needed</label>
+    <select id="assistance" class="assistance" bind:value={assistanceType} required>
       <option value="">Select assistance type</option>
       <option value="fire">Fire Emergency</option>
       <option value="flood">Flooded</option>
@@ -87,8 +96,8 @@
       <!-- Add more options as needed -->
     </select>
   
-    <label for="additionalInfo">Additional Information</label>
-    <textarea id="additionalInfo" bind:value={additionalInfo}></textarea>
+    <label for="additionalInfo" class="additionalInfo">Additional Information</label>
+    <textarea id="additionalInfo" class="additionalInfo" bind:value={additionalInfo}></textarea>
   
     <button type="submit" class="submit">Submit</button>
   </form>
