@@ -60,14 +60,6 @@
       background-color: #0056b3;
     }
 
-    .Contact-title {
-      font-family: poppins;
-      font-weight: bolder;
-      font-size: 36px;
-      text-align: center;
-      text-shadow: #333;
-    }
-
     .box1{
     display: flex;
     flex-direction: column;
