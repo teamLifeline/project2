@@ -17,7 +17,7 @@
       };
   
       emailjs
-        .send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
+        .send('service_giszsoc', 'template_p6rsl64', templateParams, 'OuDODiG6WJZhN7dX7')
         .then((response) => {
           alert('Message sent successfully!');
         })
@@ -35,6 +35,7 @@
       gap: 1rem;
       max-width: 600px;
       margin: auto;
+      font-family: poppins;
     }
     label {
       font-weight: bold;
@@ -56,10 +57,18 @@
     button:hover {
       background-color: #0056b3;
     }
+
+    .Contact-title {
+      font-family: poppins;
+      font-weight: bolder;
+      font-size: 36px;
+      text-align: center;
+      text-shadow: #333;
+    }
   </style>
   
-  <h1>Contact Us</h1>
-  <form on:submit|preventDefault={sendContactForm}>
+  <h1 class="Contact-title">Contact Us</h1>
+  <form on:submit|preventDefault={sendContactForm} class="w-screen h-screen">
     <label for="name">Name</label>
     <input id="name" type="text" bind:value={name} required />
   

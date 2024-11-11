@@ -1,5 +1,6 @@
 <script lang="ts">
     import emailjs from 'emailjs-com';
+
     let name = '';
     let contactNumber = '';
     let address = '';
@@ -16,7 +17,7 @@
       };
   
       emailjs
-        .send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
+        .send('service_giszsoc', 'template_p6rsl64', templateParams, 'OuDODiG6WJZhN7dX7')
         .then((response) => {
           alert('Request sent successfully!');
         })
@@ -34,6 +35,7 @@
       gap: 1rem;
       max-width: 600px;
       margin: auto;
+      font-family: poppins;
     }
     label {
       font-weight: bold;
@@ -55,10 +57,18 @@
     button:hover {
       background-color: #218838;
     }
+
+    .Request-title {
+      font-family: poppins;
+      font-weight: bolder;
+      font-size: 36px;
+      text-align: center;
+      text-shadow:#333;
+    }
   </style>
   
-  <h1>Request Aid</h1>
-  <form on:submit|preventDefault={sendRequest}>
+  <h1 class="Request-title">Request Aid</h1>
+  <form on:submit|preventDefault={sendRequest} class="font-poppins">
     <label for="name">Name</label>
     <input id="name" type="text" bind:value={name} required />
   
@@ -80,6 +90,6 @@
     <label for="additionalInfo">Additional Information</label>
     <textarea id="additionalInfo" bind:value={additionalInfo}></textarea>
   
-    <button type="submit">Submit</button>
+    <button type="submit" class="submit">Submit</button>
   </form>
   
