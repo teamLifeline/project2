@@ -4,9 +4,9 @@
     let text1 = "News";
     let text2 = "Article";
 	let youtubeUrls = [
-    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Video 1
-    "https://www.youtube.com/embed/VIDEO_ID_2", // Video 2
-    "https://www.youtube.com/embed/VIDEO_ID_3", // Video 3
+    "https://www.youtube.com/embed/J6GDMNln4CM", // Video 1
+    "https://www.youtube.com/embed/JBzsX1lIBDQ", // Video 2
+    "https://www.youtube.com/embed/v3TGwvC6i38", // Video 3
 	];
 	
 		let currentVideoIndex = 0; // Current video index
@@ -125,6 +125,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	color: white;
   	}
 
 	.video-container iframe {
@@ -250,7 +251,7 @@
     <div class="column">{text2}
 		<div class="link-container content-center">
 			<a href={articleUrl} target="_blank" rel="noopener noreferrer">
-			click the link
+			Read the latest Weather article here
 			</a>
 		</div>
 	</div>
