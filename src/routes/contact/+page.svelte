@@ -55,6 +55,7 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      overflow: hidden;
     }
     button:hover {
       background-color: #0056b3;
