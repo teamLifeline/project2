@@ -6,7 +6,11 @@
 </script>
 
 <Header />
+
 <main>
 	<slot />
 </main>
-<Footer />
+
+<div style="margin-top: 135px;">
+	<Footer/>
+</div>

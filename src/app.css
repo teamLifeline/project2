@@ -2,13 +2,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-html {
+/*html {
     scroll-behavior: smooth;
-    color: #ffffff; /* Change to white for better visibility */
+    color: #ffffff; /* Change to white for better visibility 
 }
 
 body {
-    background-color: #1a1a1a; /* Ensure a dark background for contrast */
+    background-color: #1a1a1a; /* Ensure a dark background for contrast
 }
 
 * {
@@ -51,5 +51,10 @@ h3,
 }
 
 .bg-merch {
-    background-color: #1a0a2c; /* A light peach color */
+    background-color: #1a0a2c; /* A light peach color 
 }
+
+main{
+    height: 100%;
+    width: full;
+}*/ 

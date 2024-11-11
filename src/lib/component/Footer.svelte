@@ -5,7 +5,9 @@
 		text-align: center;
 		font-family: Poppins, sans-serif;
 		overflow: hidden;
-		padding: .5rem;  
+		padding: .5rem;
+		border-top: 5px;
+		border-color: 	rgb(0, 0, 0);
 	}
 </style>
 

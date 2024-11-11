@@ -1,4 +1,6 @@
 <!-- put welcome page here --><script lang="ts">
+	import Footer from "$lib/component/Footer.svelte";
+
     let text1 = "News";
     let text2 = "Article";
 	let youtubeUrls = [
